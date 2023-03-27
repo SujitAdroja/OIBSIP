@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon " href="/favicon2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Task Controller</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container search-container">
+        <a class="link" href="#">Task Controller</a>
+        <form class="d-flex" name="task-form">
+          <input
+            style="margin-right: 10px"
+            class="form-control task-name"
+            type="text"
+            name="title"
+            placeholder="Add new task"
+            required
+          />
+          <input
+            style="margin-right: 10px"
+            class="form-control task-desc"
+            type="text"
+            name="description"
+            placeholder="Add short description"
+            required
+          />
+          <button type="submit" class="btn btn-success btn-add-task">
+            Add Task
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div>
+      <div class="container container-tasks">
+        <div class="task-heading">
+          Tasks
+          <hr />
+        </div>
+        <ul class="task-headings-container">
+          <li>Name</li>
+          <li>Description</li>
+          <li>Date and time</li>
+        </ul>
+        <ul class="list-group task-container"></ul>
+        <div class="my-3 p-0">
+          <button type="button" class="btn btn-primary btn-clear">
+            Clear All Tasks
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
